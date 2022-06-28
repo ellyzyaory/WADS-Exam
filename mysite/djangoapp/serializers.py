@@ -19,4 +19,4 @@ class UserSerializer(serializers.ModelSerializer):
 class CoffeeSerializer(serializers.ModelSerializer):
     class Meta:
         model = Menu
-        fields = ['coffee', 'price']
+        fields = ['id', 'coffee', 'price']
