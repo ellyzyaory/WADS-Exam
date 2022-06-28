@@ -6,3 +6,4 @@ from django.contrib.auth.models import User
 class Menu(models.Model):
     coffee = models.CharField(max_length=255, blank=False, unique=True)
     price = models.DecimalField(max_digits=15, decimal_places=3)
+    image = models.ImageField(default='None', upload_to='photos')
